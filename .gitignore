@@ -8,3 +8,14 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Environment variables
+.env
+
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.xml
+
