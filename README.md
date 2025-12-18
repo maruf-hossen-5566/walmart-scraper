@@ -15,6 +15,7 @@ approach**.
 - requests
 - BeautifulSoup + lxml
 - pandas (CSV export)
+- uv (dependency management)
 
 ---
 
@@ -49,11 +50,19 @@ walmart_scraper/
 
 ## ▶️ How to Run
 
-### 1. Install dependencies
+### 1. Create virtual environment
 
-```pip install -r requirements.txt```
+```
+uv venv
+```
 
-### 2. Configure environment variables
+### 2. Install dependencies
+
+```
+uv pip install -r requirements.txt
+```
+
+### 3. Configure environment variables
 
 Create a `.evn` file using `.env.example`:
 
@@ -63,10 +72,10 @@ BRIGHTDATA_ENDPOINT=brightdata_api_endpoint
 BRIGHTDATA_ZONE=your_zone_name
 ```
 
-### 3. Run the scraper
+### 4. Run the scraper
 
 ```
-python main.py
+uv run main.py
 ```
 
 You'll be prompted for:
